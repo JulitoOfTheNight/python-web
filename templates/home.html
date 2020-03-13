@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% set page = {
+    "title":"Home Page",
+    "userPageLink":"/user"
+} %}
+
+{% block content %}
+<h1>Hello u are in: Home Page!</h1>
+<a href="{{ page.userPageLink }}">Go to: User Page!</a>
+{% endblock %}
